@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #008080;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6f00;
+}
+
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    animation: fadeIn 0s ease-in;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.slider {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services {
+    padding: 40px 20px;
+    background-color: #008080;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    background-color: 	#808080;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    left: 0;
+    width: 100%;      /* Ширина футера будет 100% */
+    
+}
+
+footer .container {
+    padding: 0 20px;  /* Отступы внутри контейнера */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none; /* Убирает подчеркивание у ссылки */
+    outline: none; /* Убирает выделение ссылки при фокусе */
+}
+
+a:hover {
+    text-decoration: none; /* Убирает подчеркивание при наведении */
+}
+
+.cta-button {
+    background: #008080;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px; /* Добавляем отступ сверху */
+}
+
+.cta-button:hover {
+    background: 	#708090;
+}
+
+#about {
+    text-align: center; /* Центрирует весь текст внутри секции */
+    padding: 60px 0; /* Добавляет отступ сверху и снизу */
+    background-color: #008080;
+}
+
+#about h2, #about h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#about ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#about ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
